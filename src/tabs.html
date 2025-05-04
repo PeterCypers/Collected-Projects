@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Tabs Example</title>
+</head>
+<body class="bg-gray-100 p-8">
+
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <!-- Tab Headers -->
+    <div class="flex space-x-4 border-b">
+      <button id="tab-1" class="py-2 px-4 text-lg font-medium text-blue-500 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-500 focus:outline-none" onclick="showTab(1)">
+        Tab 1
+      </button>
+      <button id="tab-2" class="py-2 px-4 text-lg font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 hover:border-gray-500 focus:outline-none" onclick="showTab(2)">
+        Tab 2
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="content-1" class="p-4">
+      <h2 class="text-xl font-semibold">Tab 1 Content</h2>
+      <p>This is the content of Tab 1.</p>
+    </div>
+    <div id="content-2" class="hidden p-4">
+      <h2 class="text-xl font-semibold">Tab 2 Content</h2>
+      <p>This is the content of Tab 2.</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle tab switching
+    function showTab(tabIndex) {
+      // Hide all content divs
+      const contents = document.querySelectorAll('[id^="content-"]');
+      contents.forEach(content => {
+        content.classList.add('hidden');
+      });
+
+      // Remove active state from all tabs
+      const tabs = document.querySelectorAll('[id^="tab-"]');
+      tabs.forEach(tab => {
+        tab.classList.remove('text-blue-500', 'border-blue-500');
+        tab.classList.add('text-gray-500', 'border-transparent');
+      });
+
+      // Show the selected tab's content
+      document.getElementById('content-' + tabIndex).classList.remove('hidden');
+
+      // Add active state to the selected tab
+      const activeTab = document.getElementById('tab-' + tabIndex);
+      activeTab.classList.add('text-blue-500', 'border-blue-500');
+      activeTab.classList.remove('text-gray-500', 'border-transparent');
+    }
+
+    // Set the first tab as active by default
+    showTab(1);
+  </script>
+
+</body>
+</html>

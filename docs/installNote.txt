@@ -11,3 +11,6 @@ Add the paths to all of your template files in your tailwind.config.js file.
     },
     plugins: [],
   }
+
+to see code changes reflected you have to rebuild, this should be running: (in a freshly cloned VSC space first run: "npm install")
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
