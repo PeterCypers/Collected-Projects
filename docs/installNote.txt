@@ -1,0 +1,13 @@
+tailwind: https://v3.tailwindcss.com/docs/installation
+
+Configure your template paths
+Add the paths to all of your template files in your tailwind.config.js file.
+
+  /** @type {import('tailwindcss').Config} */
+ export default {
+>   content: ["./src/**/*.{html,js}"],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
