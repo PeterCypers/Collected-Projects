@@ -1,0 +1,14 @@
+/* no need for "@custom-variant dark (&:where(.dark, .dark *));" this is handled in tailwind.config.js using: darkMode: 'class' */
+
+body.light {
+  background-color: skyblue;
+}
+
+body.dark {
+  background-color: midnightblue;
+}
+
+#title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600; /* SemiBold */
+}

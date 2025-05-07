@@ -33,6 +33,39 @@ function showTab(tabIndex) {
   activeTab.classList.remove('text-gray-500', 'border-transparent', 'hover:text-gray-700', 'hover:border-gray-500');
 }
 
+
+function initBackground() {
+  const storage = localStorage;
+  const bodyClassList = document.querySelector('body').classList;
+  let theme = localStorage.getItem('theme');
+
+  if (!theme){
+    storage.setItem('theme', 'light');
+    theme = 'light';
+  }
+  bodyClassList.add(theme);
+}
+
+function initCheckBox() {
+  const checkBox = document.querySelector('.theme-switch__checkbox');
+  const theme = localStorage.getItem('theme');
+
+  // unchecked = default = 'light'
+  checkBox.checked = theme ? theme.includes('dark') : false;
+
+  document.querySelector('.theme-switch__checkbox').addEventListener('change', function (e) {
+    if (e.target.checked) {
+      document.body.classList.add('dark');
+      document.body.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.add('light');
+      document.body.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  });  
+}
+
 /**
    replaces:
    function init(){
@@ -43,5 +76,6 @@ function showTab(tabIndex) {
 document.addEventListener("DOMContentLoaded", () => {
   // Set the first tab as active by default
   showTab(1);
-
+  initBackground();
+  initCheckBox();
 });
