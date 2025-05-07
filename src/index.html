@@ -6,26 +6,84 @@
   <link href="./output.css" rel="stylesheet">
   <title>Projects Collection</title>
 </head>
-<body>
-  <h1>TODO</h1>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-gray-100 p-8">
+  <h1 class="text-3xl font-bold underline mb-5">Personal Projects</h1>
 
-  <a href="https://example.com" class="block max-w-sm mx-auto bg-white rounded-2xl border-4 border-indigo-500 shadow-md hover:shadow-xl transition-shadow duration-300">
-    <img class="w-full h-48 object-cover rounded-t-xl" src="./img/symbolsCodeTable.png" alt="Symbol table">
-    <div class="p-4">
-      <h3 class="text-indigo-600 uppercase text-sm font-semibold">HTML Symbols Code Table</h3>
-      <p class="mt-1 text-black font-medium text-lg">Simple symbol reference</p>
-      <p class="mt-2 text-slate-500 text-sm">Browse enhanced HTML symbols for web development. Easily copy and use them in your projects.</p>
+  <!-- TABS -->
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+    <!-- Tab Headers -->
+    <div class="flex space-x-4 border-b">
+      <button id="tab-1" class="py-2 px-4 text-lg font-medium text-blue-500 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-500 focus:outline-none" onclick="showTab(1)">
+        Tools
+      </button>
+      <button id="tab-2" class="py-2 px-4 text-lg font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 hover:border-gray-500 focus:outline-none" onclick="showTab(2)">
+        Games
+      </button>
     </div>
-  </a>
+
+    <!-- Tab 1 Content (new > old, add new cards on top)-->
+    <div id="content-1" class="p-4">
+      <!-- <h2 class="text-xl font-semibold">Tab 1 Content</h2> -->
+      <p class="mb-5">Useful(?) tools I've made, sorted from new > old.</p>
+
+      <!-- Add a flex div container for all the cards: TODO: -->
+
+      <a href="https://petercypers.github.io/SymbolsCodeTableEnhanced/" class="block max-w-sm mx-auto bg-white rounded-2xl border-4 border-indigo-500 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img class="w-full h-48 object-cover rounded-t-xl" src="./img/symbolsCodeTable.png" alt="Symbol table">
+        <div class="p-4">
+          <h3 class="text-indigo-600 uppercase text-sm font-semibold">HTML Symbols Code Table</h3>
+          <p class="mt-1 text-black font-medium text-lg">Simple symbol reference</p>
+          <p class="mt-2 text-slate-500 text-sm">Browse HTML symbols for web development. Easily copy and use them in your projects.</p>
+        </div>
+      </a>
+
+      <a href="https://petercypers.github.io/TwosPower/" class="block max-w-sm mx-auto bg-white rounded-2xl border-4 border-indigo-500 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img class="w-full h-48 object-cover rounded-t-xl" src="./img/tools_power_of_two.png" alt="a binary calculator">
+        <div class="p-4">
+          <h3 class="text-indigo-600 uppercase text-sm font-semibold">TwosPower</h3>
+          <p class="mt-1 text-black font-medium text-lg">The Power of 2</p>
+          <p class="mt-2 text-slate-500 text-sm">A tool to help make binary calculations for people who are learning computer science.</p>
+        </div>
+      </a>
+
+    </div>
+    <!-- Tab 1 Content End -->
+
+    <!-- Tab 2 Content (new > old, add new cards on top)-->
+    <div id="content-2" class="hidden p-4">
+      <!-- <h2 class="text-xl font-semibold">Tab 2 Content</h2> -->
+      <p class="mb-5">Games I've made, sorted from new > old.</p>
+
+
+      <!-- Add a flex div container for all the cards: TODO: -->
+
+      <a href="https://petercypers.github.io/Super-Tic-Tac-Toe/" class="block max-w-sm mx-auto bg-white rounded-2xl border-4 border-indigo-500 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img class="w-full h-48 object-cover rounded-t-xl" src="./img/game_superTTT.png" alt="Symbol table">
+        <div class="p-4">
+          <h3 class="text-indigo-600 uppercase text-sm font-semibold">Super TTT</h3>
+          <p class="mt-1 text-black font-medium text-lg">Super Tic-Tac-Toe</p>
+          <p class="mt-2 text-slate-500 text-sm">A multidimensional game of Tic-Tac-Toe inspired by a youtube video by Vsauce.</p>
+        </div>
+      </a>
+      <a href="https://petercypers.github.io/SudokuRandomizer/" class="block max-w-sm mx-auto bg-white rounded-2xl border-4 border-indigo-500 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <img class="w-full h-48 object-cover rounded-t-xl" src="./img/game_sudoku.png" alt="Symbol table">
+        <div class="p-4">
+          <h3 class="text-indigo-600 uppercase text-sm font-semibold">Sudoku</h3>
+          <p class="mt-1 text-black font-medium text-lg">Sudoku Randomizer</p>
+          <p class="mt-2 text-slate-500 text-sm">Play a fixed(hardcoded) set of sudoku games or randomly generate a template.</p>
+        </div>
+      </a>
+
+    </div>
+    <!-- Tab 2 Content End -->
+  </div>
+  <!-- Tabs End-->
+
 
   <!-- pretending we're in React: (1) -->
   <!-- <div id="card-container"></div> -->
-  <div class="text-center mt-10">
-    <a href="tabs.html" class="text-blue-500 text-xl hover:underline">Go to Tabs Example</a>
-  </div>
+
+  <div class="text-center mb-10"></div>
   
   <script src="js/main.js"></script>
 </body>
