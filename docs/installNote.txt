@@ -12,5 +12,9 @@ Add the paths to all of your template files in your tailwind.config.js file.
     plugins: [],
   }
 
+(I have re-organised my project folderstructure and moved the index.html to the project root for easy deployment on github pages
+there for the content searchstring has changed to: "./index.html", "./src/**/*.{html,js}"
+tailwind needs to be able to watch all html and js files to adjust it's output.css accordingly)
+
 to see code changes reflected you have to rebuild, this should be running: (in a freshly cloned VSC space first run: "npm install")
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
