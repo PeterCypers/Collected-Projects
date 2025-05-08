@@ -16,5 +16,8 @@ Add the paths to all of your template files in your tailwind.config.js file.
 there for the content searchstring has changed to: "./index.html", "./src/**/*.{html,js}"
 tailwind needs to be able to watch all html and js files to adjust it's output.css accordingly)
 
+(if something goes wrong in the output file it can be deleted? and running the  watch(build) will generate a new one 
+-> test in a throwaway project first)
+
 to see code changes reflected you have to rebuild, this should be running: (in a freshly cloned VSC space first run: "npm install")
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
