@@ -12,3 +12,8 @@ body.dark {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600; /* SemiBold */
 }
+
+h3, p {
+  word-break: break-word; /* Not standard but works in some browsers */
+  overflow-wrap: break-word; /* Standard way to handle word breaking */
+}
