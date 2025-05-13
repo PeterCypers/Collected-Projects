@@ -36,7 +36,7 @@
   <h1 id="title" class="text-black dark:text-white text-3xl font-bold underline mb-5">Projects Collection</h1>
 
   <!-- TABS -->
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+  <div class="max-w-[90vw] mx-auto bg-white rounded-xl shadow-md overflow-hidden">
     <!-- Tab Headers -->
     <div class="flex space-x-4 border-b dark:bg-black">
       <button id="tab-1" class="py-2 px-4 text-lg font-medium text-blue-500 border-b-2 border-transparent hover:text-blue-700 hover:border-blue-500 focus:outline-none" onclick="showTab(1)">
@@ -52,9 +52,8 @@
       <!-- <h2 class="text-xl font-semibold">Tab 1 Content</h2> -->
       <p class="mb-5">Useful tools I've made, sorted from new > old.</p>
 
-      <!-- Add a flex div container for all the cards: TODO: possibly remove the mt-5(2) values from the anchors-->
-
-      <a href="https://petercypers.github.io/RemindersApp/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[90vw] mx-auto">
+      <a href="https://petercypers.github.io/RemindersApp/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_todolist.png" alt="a todo app">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">Todo List</h3>
@@ -63,7 +62,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/agenda_TI_J3S1/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/agenda_TI_J3S1/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_interactive_agenda.png" alt="an interactive weekly school schedule">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">agenda_TI_J3S1</h3>
@@ -72,16 +71,16 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/COTM_interactive_map/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/COTM_interactive_map/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_castlevania_map.png" alt="an interactive castlevania circle of the moon map">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">COTM Map</h3>
-          <p class="mt-1 text-black font-medium text-lg">COTM_interactive_map</p>
+          <p class="mt-1 text-black font-medium text-lg break-words">COTM_interactive_map</p>
           <p class="mt-2 text-slate-500 text-sm">An interactive Castlevania Circle of the Moon map.</p>
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/padlock/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/padlock/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_lock_combinations.png" alt="a tool to guess padlock combinations">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">padlock</h3>
@@ -90,7 +89,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/copy_to_clipboard/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/copy_to_clipboard/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_copy_to_clipboard.png" alt="copy to clipboard tool">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">copy_to_clipboard</h3>
@@ -99,7 +98,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/html_keyword_list/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/html_keyword_list/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_utf8_keywords.png" alt="html keyword selector tool">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">html_keyword_list</h3>
@@ -108,7 +107,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/css_color_palette/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/css_color_palette/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_colorpalette.png" alt="color palette">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">colorpalette</h3>
@@ -117,7 +116,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/StopWatch/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/StopWatch/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_stopwatch.png" alt="stop watch">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">StopWatch</h3>
@@ -126,7 +125,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/RandomNumberGenerator/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/RandomNumberGenerator/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_num_gen.png" alt="numbers list generator">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">NumGen</h3>
@@ -135,7 +134,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/TimeCalculator/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/TimeCalculator/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_time_calculator.png" alt="a time calculator">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">TimeCalculator</h3>
@@ -144,7 +143,7 @@
         </div>
       </a>
 
-      <a href="https://petercypers.github.io/TwosPower/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/TwosPower/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/tools_power_of_two.png" alt="a binary calculator">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">TwosPower</h3>
@@ -154,7 +153,7 @@
       </a>
 
 
-      <a href="https://petercypers.github.io/SymbolsCodeTableEnhanced/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+      <a href="https://petercypers.github.io/SymbolsCodeTableEnhanced/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
         <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/symbolsCodeTable.png" alt="Symbol table">
         <div class="p-4">
           <h3 class="text-indigo-600 uppercase text-sm font-semibold">HTML Symbols Code Table</h3>
@@ -162,7 +161,7 @@
           <p class="mt-2 text-slate-500 text-sm">Browse HTML symbols for web development. Easily copy and use them in your projects.</p>
         </div>
       </a>
-
+    </div>
 
 
     </div>
@@ -173,26 +172,24 @@
       <!-- <h2 class="text-xl font-semibold">Tab 2 Content</h2> -->
       <p class="mb-5">Games I've made, sorted from new > old.</p>
 
-
-      <!-- Add a flex div container for all the cards: TODO: -->
-
-      <a href="https://petercypers.github.io/Super-Tic-Tac-Toe/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
-        <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/game_superTTT.png" alt="Symbol table">
-        <div class="p-4">
-          <h3 class="text-indigo-600 uppercase text-sm font-semibold">Super TTT</h3>
-          <p class="mt-1 text-black font-medium text-lg">Super Tic-Tac-Toe</p>
-          <p class="mt-2 text-slate-500 text-sm">A multidimensional game of Tic-Tac-Toe inspired by a youtube video by Vsauce.</p>
-        </div>
-      </a>
-      <a href="https://petercypers.github.io/SudokuRandomizer/" class="block max-w-sm mx-auto mt-2 bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
-        <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/game_sudoku.png" alt="Symbol table">
-        <div class="p-4">
-          <h3 class="text-indigo-600 uppercase text-sm font-semibold">Sudoku</h3>
-          <p class="mt-1 text-black font-medium text-lg">Sudoku Randomizer</p>
-          <p class="mt-2 text-slate-500 text-sm">Play a fixed(hardcoded) set of sudoku games or randomly generate a template.</p>
-        </div>
-      </a>
-
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-[90vw] mx-auto">
+        <a href="https://petercypers.github.io/Super-Tic-Tac-Toe/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+          <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/game_superTTT.png" alt="Symbol table">
+          <div class="p-4">
+            <h3 class="text-indigo-600 uppercase text-sm font-semibold">Super TTT</h3>
+            <p class="mt-1 text-black font-medium text-lg">Super Tic-Tac-Toe</p>
+            <p class="mt-2 text-slate-500 text-sm">A multidimensional game of Tic-Tac-Toe inspired by a youtube video by Vsauce.</p>
+          </div>
+        </a>
+        <a href="https://petercypers.github.io/SudokuRandomizer/" class="w-full bg-white rounded-2xl border-4 border-[#87ceeb] dark:border-[#191970] shadow-md hover:shadow-xl transition-shadow duration-300">
+          <img class="w-full h-48 object-cover rounded-t-xl" src="./src/img/game_sudoku.png" alt="Symbol table">
+          <div class="p-4">
+            <h3 class="text-indigo-600 uppercase text-sm font-semibold">Sudoku</h3>
+            <p class="mt-1 text-black font-medium text-lg">Sudoku Randomizer</p>
+            <p class="mt-2 text-slate-500 text-sm">Play a fixed(hardcoded) set of sudoku games or randomly generate a template.</p>
+          </div>
+        </a>
+      </div>
     </div>
     <!-- Tab 2 Content End -->
   </div>
